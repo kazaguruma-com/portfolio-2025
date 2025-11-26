@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>My Photo Portfolio</h1>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    </header>
+    <section class="main-slider">
+        <div class="slides">
+            <img src="DSC05937.jpg" alt="スライド1">
+            <img src="DSC06383-強化-NR-6.jpg" alt="スライド2">
+            <img src="DSC05695-強化-NR-5.jpg" alt="スライド3">
+        </div>
+    </section>
+
+<div style="height: 80px;"></div>
+<section class="gallery">
+    
+</section>
+    <script>
+      const slides = document.querySelector('.slides');
+      const totalSlides = slides.children.length;
+      let index = 0;
+
+      setInterval(() => {
+        index = (index + 1) % totalSlides;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      }, 3000);
+    </script>
+
+    <section class="gallery">
+        <figure class="photo-card">
+            <img src="DSC09618.jpg" alt="東京　1">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC03245-3.jpg" alt="東京　2">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC05987-強化-NR-2-6.jpg" alt="東京　3">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC06381.jpg" alt="東京　4">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC07575-強化-NR-2.jpg" alt="東京　5">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC01371-強化-NR.jpg" alt="東京　6">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC02419-強化-NR.jpg" alt="東京　7">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC01518-強化-NR-2.jpg" alt="東京　8">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC07910-強化-NR-4.jpg" alt="東京　9">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+        <figure class="photo-card">
+            <img src="DSC07353-2.jpg" alt="東京　10">
+            <figcaption>ここに説明が入ります</figcaption>
+        </figure>
+    </section>
+</body>
+</html>
